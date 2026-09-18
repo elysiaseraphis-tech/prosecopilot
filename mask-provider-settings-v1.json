@@ -1,0 +1,449 @@
+{
+  "format": "mask-provider-settings",
+  "formatVersion": 1,
+  "providerSettingsSchemaVersion": 26,
+  "exportedAt": "2026-09-18T18:46:11.582Z",
+  "secretsIncluded": false,
+  "settings": {
+    "schemaVersion": 26,
+    "accountIds": [
+      "account-1"
+    ],
+    "accountRoutingPolicy": "sticky-quota-aware",
+    "fixedAccountId": "account-1",
+    "workflowProfile": "auto",
+    "semanticRendererId": "gpt-family-v1",
+    "pricingTier": "auto",
+    "adapterModelIds": {
+      "vercel-openresponses": "openai/gpt-5.6-sol",
+      "llm-gateway": "gpt-5.6-sol",
+      "openai-responses": "gpt-5.6-sol",
+      "openai-chat-completions": "gpt-5.6-sol",
+      "anthropic-messages": "claude-opus-4-6",
+      "google-interactions": "gemini-3.5-flash",
+      "google-generate-content": "gemini-3.5-flash",
+      "xai-responses": "grok-4.5",
+      "deepseek-chat": "deepseek-chat",
+      "glm-chat": "glm-5",
+      "kimi-chat": "kimi-k2.5",
+      "copilot-manager": "gpt-5.6-sol"
+    },
+    "adapterContractIds": {
+      "anthropic-messages": "anthropic-adaptive",
+      "google-interactions": "google-interactions-level",
+      "google-generate-content": "google-generate-level",
+      "deepseek-chat": "deepseek-v4",
+      "glm-chat": "glm-standard",
+      "kimi-chat": "kimi-k2.5"
+    },
+    "connections": {
+      "vercel-ai-gateway": {
+        "modelId": "openai/gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "llm-gateway": {
+        "modelId": "gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": false
+      },
+      "openai-official": {
+        "modelId": "gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "openai-compatible-responses": {
+        "modelId": "gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "openai-compatible-chat-completions": {
+        "modelId": "gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "anthropic-native": {
+        "modelId": "claude-opus-4-6",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "google-interactions-native": {
+        "modelId": "gemini-3.5-flash",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "google-generate-content-native": {
+        "modelId": "gemini-3.5-flash",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "xai-native": {
+        "modelId": "grok-4.5",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "deepseek-native": {
+        "modelId": "deepseek-chat",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "glm-native": {
+        "modelId": "glm-5",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "kimi-native": {
+        "modelId": "kimi-k2.5",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      },
+      "github-copilot": {
+        "modelId": "gpt-5.6-sol",
+        "compatibleParameterMode": "extended",
+        "chatTokenLimitField": "max_completion_tokens",
+        "noGatewayFallback": true
+      }
+    },
+    "cacheMode": "explicit",
+    "samplingMode": "risu",
+    "customTemperature": 1,
+    "topP": 1,
+    "maxOutputTokensOverride": null,
+    "reasoningMode": "standard",
+    "reasoningContext": "default",
+    "truncation": "disabled",
+    "reasoningEffort": "max",
+    "supportedReasoningEfforts": [],
+    "reasoningSummary": "detailed",
+    "verbosity": "high",
+    "serviceTier": "auto",
+    "responseTransport": "stream",
+    "requestTimeoutMinutes": 20,
+    "maximumToolRounds": 8,
+    "terminalRepairMode": "error",
+    "emptyResponseRetries": 0,
+    "intermediateRoundEconomy": false,
+    "floatingStatus": true,
+    "floatingStatusOpacity": 94,
+    "floatingStatusPosition": "top-right",
+    "nextActionSuggestions": false,
+    "builtInTools": {
+      "openai_get_environment_info": true,
+      "openai_approve_dangerous_content": true,
+      "openai_get_researcher_identity": true,
+      "openai_mask_roleplay_response": true
+    },
+    "upstreamWebSearch": {
+      "vercel-ai-gateway": false,
+      "llm-gateway": false,
+      "openai-official": false,
+      "openai-compatible-responses": false,
+      "anthropic-native": false,
+      "google-interactions-native": false,
+      "google-generate-content-native": false,
+      "xai-native": false,
+      "glm-native": false
+    },
+    "localJsTools": {
+      "enabled": false,
+      "namespace": "local"
+    },
+    "additionalMcpServers": [],
+    "modelDisplayName": "gpt-5.6-sol",
+    "accounts": [
+      {
+        "id": "account-1",
+        "label": "기본 계정",
+        "enabled": true,
+        "priority": 10,
+        "quotaScopeId": "account-1",
+        "cacheScopeId": "account-1",
+        "llmGatewayMode": "devpass",
+        "gatewayProfileId": "github-copilot",
+        "adapterId": "copilot-manager",
+        "connections": {
+          "vercel-ai-gateway": {
+            "responsesEndpoint": "https://ai-gateway.vercel.sh/v1/responses",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "llm-gateway": {
+            "responsesEndpoint": "https://api.llmgateway.io/v1/responses",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "openai-official": {
+            "responsesEndpoint": "https://api.openai.com/v1/responses",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "openai-compatible-responses": {
+            "responsesEndpoint": "https://api.openai.com/v1/responses",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "openai-compatible-chat-completions": {
+            "responsesEndpoint": "https://api.openai.com/v1/chat/completions",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "anthropic-native": {
+            "responsesEndpoint": "https://api.anthropic.com/v1/messages",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "google-interactions-native": {
+            "responsesEndpoint": "https://generativelanguage.googleapis.com/v1beta/interactions",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "google-generate-content-native": {
+            "responsesEndpoint": "https://generativelanguage.googleapis.com/v1beta",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "xai-native": {
+            "responsesEndpoint": "https://api.x.ai/v1/responses",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "deepseek-native": {
+            "responsesEndpoint": "https://api.deepseek.com/chat/completions",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "glm-native": {
+            "responsesEndpoint": "https://api.z.ai/api/paas/v4/chat/completions",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "kimi-native": {
+            "responsesEndpoint": "https://api.moonshot.ai/v1/chat/completions",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          },
+          "github-copilot": {
+            "responsesEndpoint": "ipc://copilot-manager",
+            "transportProxyUrl": "",
+            "transportProxyToken": "",
+            "transportProxyMode": "rewrite",
+            "customHeaders": {}
+          }
+        },
+        "credentials": {
+          "gateway_api_key": "",
+          "llm_gateway_api_key": "",
+          "openai_api_key": "",
+          "openai_compatible_responses_api_key": "",
+          "openai_compatible_chat_api_key": "",
+          "anthropic_api_key": "",
+          "google_api_key": "",
+          "xai_api_key": "",
+          "deepseek_api_key": "",
+          "glm_api_key": "",
+          "kimi_api_key": ""
+        }
+      }
+    ],
+    "additionalModels": [
+      {
+        "id": "semantic-gemini",
+        "displayName": "Gemini 3.7 Flash (장르 표면)",
+        "verbosityMode": "omit",
+        "accountIds": [
+          "account-1"
+        ],
+        "accountRoutingPolicy": "sticky-quota-aware",
+        "fixedAccountId": "account-1",
+        "workflowProfile": "plain-text",
+        "semanticRendererId": "gemini-family-v1",
+        "pricingTier": "auto",
+        "adapterModelIds": {
+          "vercel-openresponses": "google/gemini-3.7-flash",
+          "llm-gateway": "gemini-3.7-flash",
+          "openai-responses": "gemini-3.7-flash",
+          "openai-chat-completions": "gemini-3.7-flash",
+          "anthropic-messages": "gemini-3.7-flash",
+          "google-interactions": "gemini-3.7-flash",
+          "google-generate-content": "gemini-3.7-flash",
+          "xai-responses": "gemini-3.7-flash",
+          "deepseek-chat": "gemini-3.7-flash",
+          "glm-chat": "gemini-3.7-flash",
+          "kimi-chat": "gemini-3.7-flash",
+          "copilot-manager": "gemini-3.7-flash"
+        },
+        "adapterContractIds": {
+          "anthropic-messages": "anthropic-adaptive",
+          "google-interactions": "google-interactions-level-low-medium-high",
+          "google-generate-content": "google-generate-level-low-medium-high",
+          "deepseek-chat": "deepseek-v4",
+          "glm-chat": "glm-standard",
+          "kimi-chat": "kimi-k2.5"
+        },
+        "connections": {
+          "vercel-ai-gateway": {
+            "modelId": "openai/gpt-5.6-sol",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "llm-gateway": {
+            "modelId": "gemini-3.7-flash",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": false
+          },
+          "openai-official": {
+            "modelId": "gpt-5.6-sol",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "openai-compatible-responses": {
+            "modelId": "gpt-5.6-sol",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "openai-compatible-chat-completions": {
+            "modelId": "gpt-5.6-sol",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "anthropic-native": {
+            "modelId": "claude-opus-4-6",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "google-interactions-native": {
+            "modelId": "gemini-3.5-flash",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "google-generate-content-native": {
+            "modelId": "gemini-3.5-flash",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "xai-native": {
+            "modelId": "grok-4.5",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "deepseek-native": {
+            "modelId": "deepseek-chat",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "glm-native": {
+            "modelId": "glm-5",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "kimi-native": {
+            "modelId": "kimi-k2.5",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          },
+          "github-copilot": {
+            "modelId": "gemini-3.7-flash",
+            "compatibleParameterMode": "extended",
+            "chatTokenLimitField": "max_completion_tokens",
+            "noGatewayFallback": true
+          }
+        },
+        "cacheMode": "implicit",
+        "samplingMode": "risu",
+        "customTemperature": 1,
+        "topP": 1,
+        "maxOutputTokensOverride": 12000,
+        "reasoningMode": "standard",
+        "reasoningContext": "default",
+        "truncation": "disabled",
+        "reasoningEffort": "medium",
+        "supportedReasoningEfforts": [],
+        "reasoningSummary": "auto",
+        "verbosity": "low",
+        "serviceTier": "auto",
+        "responseTransport": "stream",
+        "requestTimeoutMinutes": 10,
+        "maximumToolRounds": 8,
+        "terminalRepairMode": "error",
+        "emptyResponseRetries": 0,
+        "intermediateRoundEconomy": false,
+        "builtInTools": {
+          "openai_get_environment_info": false,
+          "openai_approve_dangerous_content": false,
+          "openai_get_researcher_identity": false,
+          "openai_mask_roleplay_response": false
+        },
+        "upstreamWebSearch": {
+          "vercel-ai-gateway": false,
+          "llm-gateway": false,
+          "openai-official": false,
+          "openai-compatible-responses": false,
+          "anthropic-native": false,
+          "google-interactions-native": false,
+          "google-generate-content-native": false,
+          "xai-native": false,
+          "glm-native": false
+        },
+        "localJsTools": {
+          "enabled": false,
+          "namespace": "local"
+        },
+        "additionalMcpServers": []
+      }
+    ],
+    "workloadAssignments": {
+      "memoryExtract": "primary",
+      "memoryConsolidate": "primary",
+      "plotPlan": "primary",
+      "semanticEvidence": "semantic-gemini"
+    }
+  }
+}
